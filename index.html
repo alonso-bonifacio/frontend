@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bsale Test</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+</head>
+
+<body>
+    <!-- MENU -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid m-4">
+            <a class="navbar-brand me-lg-5" href="/">
+                <h2>Bsale Test</h2>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <!-- BUSCADOR DE PRODUCTOS -->
+                <form class="d-flex container-fluid" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Tienda" aria-label="Search" id="buscador">
+                    <button class="btn btn-outline-success" type="button"  onclick="buscadorProducto()"><i class="bi bi-search"></i></button>
+                </form>
+            </div>
+
+        </div>
+    </nav>
+    <!-- MENU -->
+
+    <!-- CONTENIDO -->
+    <main class="w-100 mt-4 ms-4 d-inline-flex">
+
+        <!-- FILTRO CATEGORIA -->
+        <div class="list-group col-3" id="filtro-categoria"></div>
+
+        <!-- VISTA DE PRODUCTOS -->
+        <div class="card-product w-100">
+            <h4 class="ms-5" id="texto-buscado"></h4>
+            <!-- PRODUCTOS -->
+            <div class=" col row row-cols-1 row-cols-md-3 m-4 " id="contenedor-tarjeta"></div>
+        </div>
+    </main>
+    <!-- CONTENIDO -->
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="text-bg-dark p-3 w-100 mt-4">
+        <h3 class="text-center">Bsale Test</h3>
+        <p class="text-center m-0">Desarrollado por Alonso Bonifacio</p>
+        <p class="text-center">&copy; 2022 Todos Los Derechos Reservados</p>
+    </footer>
+    <!-- PIE DE PÁGINA -->
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
